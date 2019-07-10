@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> INTO RRP DEMO </title>
+</head>
+<body>
+<h1>充值 </h1>
+<div>
+    <form action="http://localhost:8080/rrpay/deposit" method="POST"
+          name="post提交">
+        <p>
+            <label>商户订单号*</label>
+            <input name="merchantOrderNo" type="text" class="normal"/>
+        </p>
+        <p>
+            <label>金额*</label>
+            <input name="orderPrice" type="text" class="normal"/>
+        </p>
+        <p>
+            <label>通道*</label>
+            <input name="channel" type="text" class="normal"/>
+        </p>
+        <p>
+            <label>回调地址*</label>
+            <input name="callBackURL" type="text" class="normal"/>
+        </p>
+        <p>
+            <input type="submit" value="提交"/>
+        </p>
+    </form>
+</div>
+
+<div>
+    <h1>提现 </h1>
+    <form action="http://localhost:8080/rrpay/withdraw" method="POST" name="post提交">
+
+        <p>商户订单号*: <input type="text" name="merchantOrderNo"></p>
+
+        <p>用户卡号*: <input type="text" name="cardNo"></p>
+
+        <p>银行卡开卡人姓名 *: <input type="text" name="cardName"></p>
+
+        <p>通道*: <input type="text" name="channel"></p>
+
+        <p>金额*: <input type="text" name="orderPrice"></p>
+
+        <p>回调地址*: <input type="text" name="callBackURL"></p>
+
+        <input type="submit" value="提交">
+    </form>
+</div>
+
+
+<div>
+    <h1>查询订单</h1>
+    <form action="http://localhost:8080/rrpay/queryOrder" method="POST" name="post提交">
+        <p>商户订单号*: <input type="text" name="merchantOrderNo"></p>
+        <input type="submit" value="提交">
+    </form>
+</div>
+
+<div>
+    <h1>查询通道</h1>
+    <form action="http://localhost:8080/rrpay/queryBankList" method="GET" name="get提交">
+        <input type="submit" value="提交">
+    </form>
+</div>
+
+</body>
+</html>
+
+
+
+
+
