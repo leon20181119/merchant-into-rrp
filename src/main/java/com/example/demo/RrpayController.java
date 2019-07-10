@@ -3,7 +3,7 @@ package com.example.demo;
 
 import com.example.demo.pojo.*;
 import com.example.demo.service.RrpApiService;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.*;
 import org.springframework.web.bind.annotation.*;
 
 
